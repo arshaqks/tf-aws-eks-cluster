@@ -21,15 +21,15 @@ module "eks" {
     {
       name                          = "Worker-Group-1"
       instance_type                 = "t2.micro"
-      asg_desired_capacity          = 2
+      asg_desired_capacity          = 1
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
     },
-    {
-      name                          = "Worker-Group-2"
-      instance_type                 = "t2.micro"
-      asg_desired_capacity          = 1
-      additional_security_group_ids = [aws_security_group.worker_group_mgmt_two.id]
-    },
+    # {
+    #   name                          = "Worker-Group-2"
+    #   instance_type                 = "t2.micro"
+    #   asg_desired_capacity          = 1
+    #   additional_security_group_ids = [aws_security_group.worker_group_mgmt_two.id]
+    # },
   ]
 }
 
