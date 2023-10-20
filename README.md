@@ -1,4 +1,5 @@
 # Deploy an AWS EKS cluster using Terraform
+(https://github.com/kiran-113/eks_cluster.git)
 
 # #######  Change aws acceskey and secreat key at vars.tf  #######
 
